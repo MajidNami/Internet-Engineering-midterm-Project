@@ -1,0 +1,234 @@
+*{
+    /* Set padding , margin of all element to 0 */
+    padding: 0;
+    margin: 0;
+    /* Set box-sizing of all element to border-box */
+    box-sizing: border-box;
+    /* set overflow auto to all elemets , it will show scroll bar when content of element is more than it space */
+    overflow: auto;
+}
+
+li{
+    /* set list style of all li tags to none for removing li bullets */
+    list-style: none;
+}
+
+body{
+    /* set an image for background to body and set it no repeat and fullsize to body */
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* set a color for background , it will apply when background image is not working */
+    background-color:#fef2f2;
+}
+
+/* create a css class with name "Container" it uses for div tag that contains some elements */
+.container{
+    /* set width to 750px */
+    width: 750px;
+    height: 500px;
+    /* set margin to 100px for y-axis(top and bottpm) and auto for x-axis(left and right) and it brings this element to center*/
+    margin: 100px auto;
+    /* set display to flex and all elements in this element will come beside together */
+    display: flex;
+    /* justify content space evenly brings all elements in this element to center in x-axis and divides the space between and around them equally */
+    justify-content: space-evenly;
+    /* align items center brings all elements in this element to center in y-axis */
+    align-items: center;
+    /* set gray background with 0.9 opaciti(0.1 transparency) */
+    background-color: rgba(198, 198, 198, 0.9);
+}
+
+/* this selector uses for seting styles to all direct div tags in elements with class container */
+.container > div{
+    /* set white background color */
+    background-color: #fff;
+    /* set 20px padding to all sides of element(top,right,bottom,left) */
+    padding: 20px;
+    /* set margin 0 for y-axis(top and bottpm) and 10px to x-axis(left and right) */
+    margin: 0 10px;
+    /* set 1px border with 0.1 opacity(90% transparency) with black color */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* set 10px border radius to make the corners rounded */
+    border-radius: 10px;
+    /* set 10px box shadow with black color to element with posistion 0 and 0 and 0.1 opacity(90% transparency) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* set text align to center for bring all texts in element to center */
+    text-align: center;
+}
+#info .info{
+    /* set display to flex and all elements in this element will come beside together */
+    display: flex;
+    /* justify content space evenly brings all elements in this element to center in x-axis and divides the space between and around them equally */
+    justify-content: space-evenly;
+    /* align items center brings all elements in this element to center in y-axis */
+    align-items: center;
+    /* set 5px padding from top */
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+/* create a class with name avatar , it will set for avatar image of user */
+.avatar{
+    /* set margin left 10px for get 10px distance from left */
+    margin-left: 10px;
+    /* set 50% border radius , it will be like a circle */
+    border-radius: 50%;
+    /* set 10px box shadow with black color to element with posistion 0 and 0 and 0.3 opacity(70% transparency) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* create a class with name user-skils , it will set for skill section */
+.user-skils{
+    /* set display to flex and all elements in this element will come beside together */
+    display: flex;
+    /* justify center evenly brings all elements in this element to center in x-axis */
+    justify-content: space-evenly;
+    /* align items center brings all elements in this element to center in y-axis */
+    align-items: center;
+}
+/* this selector will apply on all direct div tags into elements with class user-skils */
+.user-skils > div{
+    /* give 50% width of parent to this element with high priority because of !important */
+    width: 50% !important;
+}
+/* create class with name language for user programming language */
+.language{
+    /* set foreground color to red */
+    color: red;
+    /* set font weight to bold */
+    font-weight: bold;
+    /* set display to flex and all elements in this element will come beside together */
+    display: flex;
+    /* justify center evenly brings all elements in this element to center in x-axis */
+    justify-content: center;
+    /* align items center brings all elements in this element to center in y-axis */
+    align-items: center;
+}
+/* creates a class with name user-info for user information section */
+.user-info{
+    /* set display to inline-block , it can acts like block(it can get width by css) and inline elements(become beside together) */
+    display: inline-block;
+    /* set margin left 50px for get 50px distance from left */
+    margin-left: 50px;
+}
+/* creates a class with name skill-list for skill list section */
+.skill-list{
+    /* set text align to justify for align and justify text on both sides */
+    text-align: justify;
+    /* set text justify to inter word , it will get distance between words and to make text justify */
+    text-justify: inter-word;
+    /* set margin top 10px for get 10px distance from top */
+    margin-top: 10px;
+}
+/* this selector will select form tag in element with id form */
+#form form{
+    /* set 100% width and it will get 100% width of its parent */
+    width: 100%;
+    /* set 100% height and it will get 100% height of its parent */
+    height: 100%;
+    /* set display to flex and all elements in this element will come beside together */
+    display: flex;
+    /* the elemnts in this one will show in column mode */
+    flex-direction: column;
+    /* justify center evenly brings all elements in this element to center in y-axis(y-axis because of flex-direction: column) */
+    justify-content: space-evenly;
+}
+/* this selector will select input tag with type submit(submit button) in element with id form */
+#form input[type=submit]{
+    /* clear border */
+    border: none;
+    /* clear outline */
+    outline: none;
+    /* set cursor pointer(hand) for this element */
+    cursor: pointer;
+    /* set 10px padding from top and bottom and 5px to right and left */
+    padding: 10px 5px;
+    /* set background color to #22c55e*/
+    background-color: #22c55e;
+    /* set border radius to 5px and makes it rounded */
+    border-radius: 5px;
+    /* set white to it foreground-color */
+    color: #fff;
+}
+/* this selector will select input tag hover mode with type submit(submit button) in element with id form */
+#form input[type=submit]:hover{
+    /* set background color to #1d9e4c when button hoverd by mouse */
+    background-color: #1d9e4c;
+}
+/* this selector will select input tag with type text in element with id form */
+#form input[type=text]{
+    /* set 1px border with color #c2ceff */
+    border: 1px solid #c2ceff;
+    /* set outline to none */
+    outline: none;
+    /* set padding 10px to top and bottom and 5px to left and right */
+    padding: 10px 5px;
+    /* set 5px border radius , it will make it rounede */
+    border-radius: 5px;
+    /* set 10px margin for top and bottom and 0 to left and right */
+    margin: 10px 0;
+}
+/* this selector will select input tag focus mode with type text in element with id form */
+#form input[type=text]:focus{
+    /* set 2px border with color #889ff1 */
+    border: 2px solid #889ff1;
+}
+/* this selector will select placeholder of input tag with type text in element with id form */
+#form input[type=text]::placeholder{
+    /* set 14px font size */
+    font-size: 14px;
+    /* set foreground-color to black with 0.4 opacity(0.6 transparency) */
+    color: rgba(0, 0, 0, 0.4);
+}
+/* errors will be show on elements with this class */
+.alert{
+    border: 2px solid #ef4444;
+    /* set 5px border radius , it will make it rounede */
+    border-radius: 5px;
+    /* set background color to #e86f6f */
+    background-color: #e86f6f;
+    /* set width to 750px */
+    width: 750px;
+    /* set 10px padding to all sides(top,right,bottom,left) */
+    padding: 10px;
+    /* set text align to center and brings text to center */
+    text-align: center;
+    /* set white color to foreground-color */
+    color: #fff;
+    /* set font-size to 18px */
+    font-size: 18px;
+    /* set margin from top and bottom to 20px and auto from left and right to brings this tag to center */
+    margin: 20px auto;
+    /* set display to none it won't show on page */
+    display: none;
+    /* makes position relative , all elements in this element(element in this tag that has absolute value for property position) will get position relatively to this element */
+    position: relative;
+}
+/* selecr alert-close(close button of alert div) class in element with class alert */
+.alert .alert-close{
+    /* set position to absolute then we can change this position */
+    position: absolute;
+    /* bring element in position 2px from top and 2px from right */
+    top: 2px;
+    right: 2px;
+    /* set cursor pointer(hand) for this element */
+    cursor: pointer;
+}
+/* set class for fetch status section */
+.fetch-status{
+    /* set display to none it won't show on page */
+    display: none;
+}
+
+/* Utitlity Css Classes */
+/* create a class for give margin bottom 5px for get 5px distance from bottom  */
+.mb-1{
+    margin-bottom: 5px;
+}
+/* create a class for give margin top 5px for get 5px distance from top  */
+.mt-1{
+    margin-top: 5px;
+}
+/* create a class for give margin 0 and 5px for get o from top and bottom 5px distance from bottom left and right  */
+.mx-1{
+    margin: 0 5px;
+}

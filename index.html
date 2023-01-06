@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>My Github</title>
+</head>
+
+<body>
+    <div class="alert">
+        <img src="images/Close.png" class="alert-close" alt="Close btn" width="20" onclick="close_alert()">
+    </div>
+    <div class="container">
+        <div id="info">
+            <div class="info">
+                <img src="images/no photo.png" class="avatar" alt="no photo" width="110">
+                <div class="user-info">
+                    <ul class="info-list">
+                        <li class="name-section mb-1">GitHub Username</li>
+                        <li class="blog-section mb-1">GitHub Blog</li>
+                        <li class="location-section mb-1">Location</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-skils">
+                <div>
+                    <ul class="skill-list">
+                        <li>Bio</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="language" data-score="0">
+                        Language
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <form>
+                <label for="username">Github username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter a github username" />
+                <input type="submit" value="Submit" />
+                <p class="fetch-status mt-1"></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
